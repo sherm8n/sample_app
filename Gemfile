@@ -20,6 +20,11 @@ group :test do
   gem 'factory_girl_rails', '1.0'
 end
 
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
+end
+
 gem 'json'
 
 # Gems used only for assets and not required
